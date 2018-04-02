@@ -1,13 +1,13 @@
-title: Jekyll-Store
-description: 'A lightweight, backend-free ecommerce solution.'
+title: Mostly Funny T-Shirts
+description: 'A lightweight, backend-free t-shirt maker.'
 baseurl: /front
-url: 'http://www.jekyll-store.com'
+url: 'http://www.mostlyfunnytshirts.com'
 
 # Jekyll-Store Engine
 defaultAddress:
-  country: GB
+  country: US
 payment:
-  currency: GBP
+  currency: USD
   hook: 'https://jekyll-store-microservice.herokuapp.com/purchase'
 tracking_id: 'UA-62379004-1'
 
@@ -19,7 +19,7 @@ disqus_shortname: 'jekyll-store'
 
 # http://openexchangerates.github.io/accounting.js/#documentation
 accounting:
-  symbol : '£'
+  symbol : '$'
   format: '%s%v'
   decimal : '.'
   thousand: ','
@@ -51,10 +51,6 @@ prose:
         field:
           element: number
           label: 'Price (£)'
-      - name: weight
-        field:
-          element: number
-          label: 'Weight (kg)'
       - name: designer
         field:
           element: text
@@ -67,14 +63,6 @@ prose:
             - value: Wood
             - value: Metal
             - value: Metallic
-      - name: condition
-        field:
-          element: select
-          label: Condition
-          options:
-            - value: Mint
-            - value: Worn
-            - value: Rough
       - name: image
         field:
           element: text
